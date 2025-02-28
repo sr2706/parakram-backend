@@ -1,6 +1,6 @@
 const Team = require('../models/team');
 const Payment = require('../models/payment');
-const { generatePDF } = require('../utils/pdfgenerator');
+const { generatePDF } = require('../utils/pdfGenerator');
 const cloudinary = require('../config/cloudinary');
 const streamifier = require('streamifier');
 
