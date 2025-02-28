@@ -21,10 +21,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Mount routes
 app.use('/api/teams', require('./routes/teamroutes'));
-app.use('/api/accommodation', require('./routes/accommodationRoutes'));
-app.use('/api/payments', require('./routes/paymentRoutes'));
-app.use('/api/admin', require('./routes/adminRoutes'));
-app.use('/api/auth', require('./routes/authRoutes'));
+app.use('/api/accommodation', require('./routes/accommodationroutes'));
+app.use('/api/payments', require('./routes/paymentroutes'));
+app.use('/api/admin', require('./routes/adminroutes'));
+app.use('/api/auth', require('./routes/authroutes'));
 
 // Root route
 app.get('/', (req, res) => {
