@@ -2,6 +2,8 @@ const express = require('express');
 const dotenv = require('dotenv');
 const connectDB = require('./config/db');
 const path = require('path');
+const cors = require('cors');
+
 
 // Load env vars
 dotenv.config();
@@ -15,6 +17,7 @@ const app = express();
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(cors());
 
 // Set static folder
 app.use(express.static(path.join(__dirname, 'public')));
